@@ -1,0 +1,314 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    position: relative;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1a1a1a; /* Darker header */
+    color: white;
+    position: relative;
+    z-index: 10;
+    animation: fadeIn 1s ease-in-out;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2); /* Lighter red-tinted shadow */
+}
+
+.logo-container img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #ff5a00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3); /* Lighter red shadow for buttons */
+}
+
+.cta-btn:hover {
+    background-color: #e04a00;
+    box-shadow: 0 6px 12px rgba(255, 0, 0, 0.5); /* Subtle red shadow on hover */
+}
+
+/* Intro Section */
+.intro {
+    padding: 40px;
+    text-align: center;
+    background-color: #1f1f1f; /* Slightly darker than header */
+    animation: slideIn 1s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2); /* Subtle red shadow for intro section */
+}
+
+.intro h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+/* Services Section */
+.services {
+    padding: 40px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #2a2a2a; /* Dark card background */
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2); /* Subtle red shadow for cards */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(255, 0, 0, 0.4); /* Light red shadow on hover */
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.learn-more-btn {
+    padding: 10px 20px;
+    background-color: #ff5a00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3); /* Lighter red shadow for button */
+}
+
+.learn-more-btn:hover {
+    background-color: #e04a00;
+    box-shadow: 0 6px 12px rgba(255, 0, 0, 0.5); /* Subtle red shadow on hover */
+}
+
+/* Team Section */
+.team {
+    padding: 50px 40px;
+    background-color: #1f1f1f;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2); /* Lighter section shadow */
+}
+
+.team h2 {
+    font-size: 2.2em;
+    margin-bottom: 40px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: #2a2a2a;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2); /* Lighter red-tinted shadow */
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(255, 0, 0, 0.4); /* Subtle red shadow on hover */
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1.1em;
+    color: #bbbbbb;
+}
+
+.connect-btn {
+    padding: 10px 20px;
+    background-color: #0077b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3); /* Subtle red shadow for button */
+}
+
+.connect-btn:hover {
+    background-color: #005582;
+    box-shadow: 0 6px 12px rgba(255, 0, 0, 0.5); /* Red shadow on hover */
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 40px;
+    text-align: center;
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2); /* Subtle section shadow */
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.testimonial {
+    background-color: #2a2a2a;
+    padding: 20px;
+    width: 40%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2); /* Subtle red shadow */
+}
+
+.testimonial:hover {
+    box-shadow: 0 6px 14px rgba(255, 0, 0, 0.4); /* Light red shadow on hover */
+}
+
+.testimonial p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.testimonial h4 {
+    font-size: 1.1em;
+    color: #bbbbbb;
+}
+
+/* Call-to-Action Section */
+.cta {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2); /* Subtle section shadow */
+}
+
+.cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(255, 0, 0, 0.3); /* Lighter footer shadow */
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.background-symbol {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1600px;
+    height: 1600px;
+    background-image: url('DALL·E\ 2024-10-04\ 15.13.59\ -\ A\ full-body\ image\ of\ a\ kingfisher\ bird\ with\ bright\,\ vivid\ colors.\ The\ bird\ is\ depicted\ with\ its\ iconic\ blue\ and\ orange\ feathers\,\ perched\ gracefully\ on.webp');
+    background-size: cover;
+    opacity: 0.05;
+    z-index: 1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services-container,
+    .team-container,
+    .testimonials-container {
+        flex-direction: column;
+    }
+
+    .service-item,
+    .team-member,
+    .testimonial {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
